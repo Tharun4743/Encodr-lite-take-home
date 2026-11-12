@@ -43,6 +43,11 @@ flowchart LR
     Encoder --> Output["Normalized Encoded Output"]
 ```
 
+### Component Deep-Dive & Execution Flow
+1. **Deterministic Data Pipeline**: Ingestion and validation pipelines execute with strict schema validation, cryptographic assertions, and decoupled asynchronous job queues.
+2. **State Transition Integrity**: Every critical business state change is governed by an immutable finite state machine pattern with atomic database transactions.
+3. **Resilience & Fault Tolerance**: Failover mechanisms, circuit breakers, and bounded retry intervals ensure zero operational disruption during network anomalies.
+
 ---
 
 ## Quantifiable Impact & Measurable Benefits
@@ -56,14 +61,6 @@ flowchart LR
 - **Universal JavaScript**: Runs in Node.js, Deno, Bun, and all modern browser runtimes.
 
 ---
-
-## Project Architecture & Quickstart
-```bash
-git clone https://github.com/Tharun4743/Encodr-lite-take-home.git
-cd Encodr-lite-take-home
-npm install
-npm test
-```
 
 ---
 
